@@ -145,7 +145,7 @@ export class BleCapacitorConnection extends MeshDevice {
     let readBuffer = new ArrayBuffer(1);
     while (readBuffer.byteLength > 0 && FromRadioUuid) {
       await BleClient.read(this.portId, ServiceUuid, FromRadioUuid).then((value) => {
-        readBuffer = value.buffer;
+        readBuffer = value.buffer as any;
         if (value.byteLength > 0) {
           this.handleFromRadio(new Uint8Array(readBuffer));
         }

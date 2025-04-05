@@ -1,24 +1,24 @@
 {
   "$schema": "https://biomejs.dev/schemas/1.6.1/schema.json",
   "organizeImports": {
-    "enabled": true
+    "enabled": false
   },
   "files": {
     "ignoreUnknown": true
   },
   "vcs": {
-    "enabled": true,
+    "enabled": false,
     "clientKind": "git",
     "useIgnoreFile": true,
     "defaultBranch": "master"
   },
   "formatter": {
-    "enabled": true,
+    "enabled": false,
     "indentStyle": "space",
     "indentWidth": 2
   },
   "linter": {
-    "enabled": true,
+    "enabled": false,
     "rules": {
       "recommended": true,
       "suspicious": {

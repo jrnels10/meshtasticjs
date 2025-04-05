@@ -225,7 +225,7 @@ export class BleConnection extends MeshDevice {
       await this.fromRadioCharacteristic
         .readValue()
         .then((value) => {
-          readBuffer = value.buffer;
+          readBuffer = value.buffer as any;
 
           if (value.byteLength > 0) {
             this.handleFromRadio(new Uint8Array(readBuffer));
