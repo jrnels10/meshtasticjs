@@ -11,7 +11,7 @@
     "meshtastic bluetooth serial webserial webbluetooth ble http library typescript javascript"
   ],
   "publishConfig": {
-    "provenance": true
+    "registry": "https://npm.pkg.github.com"
   },
   "sideEffects": false,
   "type": "module",
